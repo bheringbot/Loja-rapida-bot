@@ -1,109 +1,156 @@
-/* Fundo com blend escuro/moderno */
-body {
+/* Reset básico */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #1e1e2f, #3a3a50);
-  color: #f0f0f0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Centralização */
-.page-wrapper {
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: linear-gradient(120deg, #2196F3, #21CBF3);
+  color: white;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn-compra {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: #128C7E;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.btn-compra:hover {
+  background: #0b5c50;
+  transform: scale(1.03);
+}
+
+/* DESTAQUES */
+.destaques {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  width: 100%;
 }
 
-/* Card principal */
 .card {
-  background: #ffffff;
-  color: #222;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  max-width: 400px;
-  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  flex: 1 1 280px;
   text-align: center;
 }
 
-/* Título */
-.card h1 {
+.card h2 {
   margin-bottom: 10px;
+  font-size: 1.25rem;
+  color: #2196F3;
+}
+
+/* FORM DEMO */
+.demo {
+  background: #f5f5f5;
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demo h2 {
   font-size: 1.8rem;
-  color: #111;
+  margin-bottom: 30px;
+  font-weight: 600;
 }
 
-/* Subtítulo */
-.subtitle {
-  margin-bottom: 25px;
-  color: #666;
-  font-size: 0.95rem;
-}
-
-/* Campos */
-.field {
-  margin-bottom: 15px;
-  text-align: left;
+.form-demo {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }
 
 input, select {
   width: 100%;
   padding: 12px;
+  margin-bottom: 15px;
   font-size: 1rem;
+  border-radius: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  background: #fafafa;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* Preview */
 #preview {
-  background: #f5f5f5;
-  padding: 12px;
-  border-radius: 8px;
+  background: #fdfdfd;
   border: 1px solid #ddd;
-  margin-top: 10px;
-  font-size: 0.9rem;
+  padding: 12px;
+  border-radius: 10px;
   min-height: 60px;
-  text-align: left;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
 }
 
-/* Botão estilo WhatsApp */
 button {
-  margin-top: 20px;
-  padding: 14px 24px;
+  width: 100%;
+  padding: 14px;
   font-size: 1rem;
-  color: white;
   background: linear-gradient(90deg, #25D366, #128C7E);
+  color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.2s;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 button:hover {
+  background: #0b5c50;
   transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
-}
-.gumroad-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 24px;
-  font-size: 1rem;
-  color: white;
-  text-align: center;
-  background: linear-gradient(90deg, #25D366, #128C7E);
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
-  transition: all 0.2s ease-in-out;
 }
 
-.gumroad-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
-  }
+/* FOOTER */
+footer {
+  background: #f0f0f0;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #2196F3;
+  text-decoration: none;
+}
