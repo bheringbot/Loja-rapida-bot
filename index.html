@@ -2,17 +2,23 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Pedido Instantâneo - Loja Rápida</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loja Rápida - Pedido Instantâneo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Pedido Instantâneo - Loja Rápida</h2>
-  <div class="field"><input type="text" id="nome" placeholder="Seu nome"></div>
-  <div class="field"><select id="produto"></select></div>
-  <div class="field"><select id="tamanho"></select></div>
-  <div id="preview">Preencha os campos acima</div>
-  <button onclick="abrirWhats()">Enviar para o WhatsApp</button>
+  <div class="page-wrapper">
+    <div class="card">
+      <h1>📦 Loja Rápida</h1>
+      <p class="subtitle">Seu pedido instantâneo via WhatsApp</p>
+
+      <div class="field"><input type="text" id="nome" placeholder="Seu nome"></div>
+      <div class="field"><select id="produto"></select></div>
+      <div class="field"><select id="tamanho"></select></div>
+      <div id="preview">Preencha os campos acima</div>
+      <button onclick="abrirWhats()">Enviar para o WhatsApp</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
