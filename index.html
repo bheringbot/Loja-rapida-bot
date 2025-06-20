@@ -2,27 +2,48 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Loja Rápida - Pedido Instantâneo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
+  <title>Loja Rápida Bot – Pedido Instantâneo via WhatsApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="page-wrapper">
-    <div class="card">
-      <h1>📦 Loja Rápida</h1>
-      <p class="subtitle">Seu pedido instantâneo via WhatsApp</p>
+  <header class="hero">
+    <h1>🚀 Loja Rápida Bot</h1>
+    <p>Seu cliente escolhe, preenche, e envia pro WhatsApp em segundos.</p>
+    <a href="https://bheringkaua.gumroad.com/l/wxvxm" class="btn-compra" target="_blank">🔒 Comprar Agora no Gumroad</a>
+  </header>
 
-      <div class="field"><input type="text" id="nome" placeholder="Seu nome"></div>
-      <div class="field"><select id="produto"></select></div>
-      <div class="field"><select id="tamanho"></select></div>
+  <section class="destaques">
+    <div class="card">
+      <h2>✅ Simples de usar</h2>
+      <p>Funciona direto no navegador. Sem instalações, sem códigos.</p>
+    </div>
+    <div class="card">
+      <h2>🎯 Mais conversões</h2>
+      <p>Crie um pedido elegante, rápido e direto para o WhatsApp.</p>
+    </div>
+    <div class="card">
+      <h2>🎨 100% personalizável</h2>
+      <p>Edite produtos, tamanho, logo e cores facilmente.</p>
+    </div>
+  </section>
+
+  <section class="demo">
+    <h2>🧪 Veja como funciona</h2>
+    <div class="form-demo">
+      <input type="text" id="nome" placeholder="Seu nome">
+      <select id="produto"></select>
+      <select id="tamanho"></select>
       <div id="preview">Preencha os campos acima</div>
       <button onclick="abrirWhats()">Enviar para o WhatsApp</button>
-      
-      <a class="gumroad-button" href="https://bheringkaua.gumroad.com/l/wxvxm">Comprar bot agora</a>
-<script src="https://gumroad.com/js/gumroad.js"></script>
     </div>
-  </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Loja Rápida Bot • Criado por <a href="https://github.com/bheringbot" target="_blank">Bhering</a></p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
-</html>
+        </html>
