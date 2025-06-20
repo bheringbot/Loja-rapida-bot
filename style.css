@@ -1,63 +1,72 @@
-/* Fundo elegante */
+/* Fundo com blend escuro/moderno */
 body {
-  background: linear-gradient(135deg, #e0f7fa, #ffffff);
-  font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a50);
+  color: #f0f0f0;
+}
+
+/* Centralização */
+.page-wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-/* Cabeçalho destacado */
-h2 {
-  margin-bottom: 20px;
-  margin-top: 30px;
-  color: #333;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
-
-/* Campo com profundidade e responsivo */
-.field {
-  background: #fff;
-  width: 100%;
+/* Card principal */
+.card {
+  background: #ffffff;
+  color: #222;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   max-width: 400px;
-  padding: 8px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: transform .2s;
-}
-.field:hover {
-  transform: translateY(-2px);
+  width: 100%;
+  text-align: center;
 }
 
-/* Inputs e selects */
+/* Título */
+.card h1 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #111;
+}
+
+/* Subtítulo */
+.subtitle {
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Campos */
+.field {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
 input, select {
   width: 100%;
   padding: 12px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: border-color .2s;
+  box-sizing: border-box;
+  background: #fafafa;
 }
 
-input:focus, select:focus {
-  border-color: #2196F3;
-}
-
-/* Preview da mensagem */
+/* Preview */
 #preview {
-  width: 100%;
-  max-width: 400px;
-  padding: 15px;
-  margin-top: 10px;
+  background: #f5f5f5;
+  padding: 12px;
   border-radius: 8px;
-  background: #fff;
   border: 1px solid #ddd;
-  font-size: 0.95rem;
+  margin-top: 10px;
+  font-size: 0.9rem;
   min-height: 60px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
 /* Botão estilo WhatsApp */
@@ -65,16 +74,16 @@ button {
   margin-top: 20px;
   padding: 14px 24px;
   font-size: 1rem;
-  color: #fff;
+  color: white;
   background: linear-gradient(90deg, #25D366, #128C7E);
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
-  transition: transform .1s, box-shadow .2s;
+  transition: all 0.2s;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 }
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-  }
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
